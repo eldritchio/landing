@@ -1,0 +1,22 @@
+{
+  "name": "landing",
+  "version": "0.0.1",
+  "description": "eldritch.io landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "gulp",
+    "test": "mocha --recursive"
+  },
+  "author": "Devon Noel de Tilly <devon.noeldetilly@gmail.com> (http://devonoel.com)",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
+  }
+}
