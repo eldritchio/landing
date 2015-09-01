@@ -5,13 +5,13 @@ var jade = require('gulp-jade');
 gulp.task('sass', function(){
   gulp.src(['src/sass/**/*.sass','!src/sass/**/_*.sass'])
     .pipe(sass())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('jade', ['sass'], function() {
   gulp.src(['src/jade/**/*.jade', '!src/jade/**/_*.jade'])
     .pipe(jade())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('watch', function() {

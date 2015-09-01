@@ -1,14 +1,16 @@
 var express     = require('express');
 var app         = express();
-var http        = require('http').Server(app);
-var port        = 5000;
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static('public'));
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile('index.html');
 });
 
-http.listen(port, function(){
-  console.log('Magic happens on port ' + port);
+var server = app.listen(5000, function(){
+  var host = server.address().address;
+  var port = server.address().port;
+
+  console.log('Magic happens at http://%s:%s', host, port);
 });
+
