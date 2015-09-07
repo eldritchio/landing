@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "prestart" : "gulp",
+    "prestart": "gulp",
     "test": "mocha --recursive"
   },
   "author": "Devon Noel de Tilly <devon.noeldetilly@gmail.com> (http://devonoel.com)",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
