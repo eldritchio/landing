@@ -2,6 +2,7 @@
   "name": "landing",
   "version": "0.0.1",
   "description": "eldritch.io landing page",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -12,7 +13,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.3",
-    "serve-favicon": "^2.3.0"
+    "pg": "^4.4.1",
+    "serve-favicon": "^2.3.0",
+    "validator": "^4.0.5"
   },
   "devDependencies": {
     "mocha": "^2.2.5",

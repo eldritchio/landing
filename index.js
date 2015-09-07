@@ -1,5 +1,7 @@
 var express     = require('express');
 var favicon     = require('serve-favicon');
+var pg          = require('pg');
+var validator   = require('validator');
 var app         = express();
 
 app.use(express.static('public'));
