@@ -1,6 +1,7 @@
 var express     = require('express');
 var favicon     = require('serve-favicon');
 var pg          = require('pg');
+var conString   = process.env.LANDING_DSN;
 var validator   = require('validator');
 var app         = express();
 
@@ -25,5 +26,14 @@ var server = app.listen(5000, function(){
   var port = server.address().port;
 
   console.log('Magic happens at http://%s:%s', host, port);
+
+  pgConnect();
 });
 
+function pgConnect() {
+  pg.connect(conString, function(err, client, done) {
+    if(err) {
+      return console.error('Error fetching client from pool', err);
+    }
+  });
+}
