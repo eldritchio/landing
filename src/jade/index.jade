@@ -3,8 +3,13 @@ html
   head
     title Eldritch
     meta(charset='utf-8')
-    meta(name='description', content='')
-    meta(name='keywords', content='')
+    meta(name='description', content='Learn guitar, teach guitar.')
+    meta(name='keywords', content='guitar,learn,teach,learn guitar,teach guitar')
     link(rel='stylesheet', href='main.css')
   body
-    h1 Hello, world!
+    div(id='logo-area')
+      img(src='images/eldritch.svg' alt='eldritch')
+
+    form(action='/submit', method='POST')
+      input(type='email', name='email', placeholder='some@example.com')
+      button(type='submit') GO
