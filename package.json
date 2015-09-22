@@ -12,6 +12,7 @@
   "author": "Devon Noel de Tilly <devon.noeldetilly@gmail.com> (http://devonoel.com)",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.14.0",
     "express": "^4.13.3",
     "pg": "^4.4.1",
     "serve-favicon": "^2.3.0",
