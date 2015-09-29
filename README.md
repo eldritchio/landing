@@ -14,6 +14,12 @@ signups. You'll need to setup an instance of Postgres somewhere, and set the
 $ export LANDING_DSN="postgres://username:password@host/dbname"
 ```
 
+You'll also need to tell the app what port to run on.  You can set this with the
+``LANDING_PORT`` environment variable:
+```sh
+$ export LANDING_PORT=5000
+```
+
 Then, after making sure Postgres is running and accessible:
 ```sh
 $ npm start

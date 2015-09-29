@@ -5,6 +5,7 @@ var pg          = require('pg');
 var conString   = process.env.LANDING_DSN;
 var validator   = require('validator');
 var app         = express();
+var port        = process.env.LANDING_PORT;
 
 app.use(express.static('public'));
 
@@ -30,14 +31,19 @@ app.use(function(error, req, res, next) {
   res.sendFile(__dirname + '/public/500.html');
 });
 
-var server = app.listen(5000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+start();
 
-  console.log('Magic happens at http://%s:%s', host, port);
+function start() {
+  if (port) {
+    var server = app.listen(port, function(err) {
+      console.log('Magic happens on port %s', port);
 
-  createSignupsTable();
-});
+      createSignupsTable();
+    });
+  } else {
+    return console.error('Port undefined, set environment variable LANDING_PORT');
+  }
+}
 
 function createSignupsTable() {
   pg.connect(conString, function(err, client, done) {
