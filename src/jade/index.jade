@@ -8,8 +8,12 @@ html
     link(rel='stylesheet', href='main.css')
   body
     div(id='logo-area')
-      img(src='images/eldritch.svg' alt='eldritch')
+      img(src='images/eldritch-outline.svg' alt='eldritch')
+      h1 eldritch
+      h2 Learn Guitar. Teach Guitar.
 
     form(action='/submit', method='POST')
-      input(type='email', name='email', placeholder='some@example.com')
-      button(type='submit') GO
+      input(type='email', name='email', placeholder='Email me when its ready')
+      button(type='submit') SEND
+
+    h3(id='foot') Music doesn't have to be a dark art

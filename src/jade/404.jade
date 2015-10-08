@@ -4,6 +4,10 @@ html
     title Eldritch - Not Found
     meta(charset='utf-8')
     link(rel='stylesheet', href='main.css')
+    link(rel='stylesheet', href='error.css')
   body
-    h1 Not Found
-    h2 The page you're looking for has gone missing!
+    div(id='error-area')
+      a(href='/')
+        img(src='images/eldritch-outline.svg' alt='eldritch')
+      h1 Not Found
+      h2 The page you're looking for has gone missing!
