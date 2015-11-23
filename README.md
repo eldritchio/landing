@@ -1,5 +1,5 @@
 # Eldritch Landing Page
-[Eldritch landing page](http://eldritch.io), a simple node.js app.
+[Eldritch's landing page](http://eldritch.io), a simple node.js app.
 
 ## Setup and Running
 Make sure you have [node.js](https://nodejs.org) installed, then:
