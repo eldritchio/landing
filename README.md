@@ -7,6 +7,12 @@ Make sure you have [node.js](https://nodejs.org) installed, then:
 $ npm install
 ```
 
+You'll need to globally install a couple build tools:
+```sh
+$ npm install -g gulp
+$ npm install -g foreman
+```
+
 This app uses a [Postgres](http://www.postgresql.org/) database to store email
 signups. You'll need to setup an instance of Postgres somewhere, and set the
 ``LANDING_DSN`` environment variable to point to it:

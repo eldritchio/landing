@@ -5,8 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "gulp",
+    "start": "nf start",
     "test": "mocha --recursive"
   },
   "author": "Devon Noel de Tilly <devon.noeldetilly@gmail.com> (http://devonoel.com)",
@@ -19,10 +18,11 @@
     "validator": "^4.0.5"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "should": "^7.0.2",
+    "foreman": "^1.4.1",
     "gulp": "^3.9.0",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "mocha": "^2.2.5",
+    "should": "^7.0.2"
   }
 }
