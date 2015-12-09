@@ -15,12 +15,15 @@ body
   font-family: 'Droid Sans', sans-serif
   font-size: 16px
   line-height: 1.5em
-  background-color: #17D4BB
-  color: #bdffff
-  box-sizing: border-box
-  text-align: center
+
+
+header
   width: 100%
   height: 100%
+  padding-top: 10%
+  text-align: center
+  background-color: #17D4BB
+  color: #bdffff
 
 h1
   font-family: 'Droid Serif', serif
@@ -32,53 +35,44 @@ h2, h3
 
 #logo-area
   position: relative
-  top: 40%
-  -webkit-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  transform: translateY(-50%)
+  padding: 15px
   img
     width: 200px
 
-form
+#form-area
   position: relative
-  top: 30%
-  -webkit-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  transform: translateY(-50%)
-  input
-    border: none
-    outline: none
-    padding: 15px
-    width: 250px
-    background-color: #8affff
-    color: #00947b
-    font-size: 16px
-    border: 2px solid #8affff
-    border-top-left-radius: 4px
-    border-bottom-left-radius: 4px
+  padding: 15px
+  form
+    input
+      border: none
+      outline: none
+      padding: 15px
+      width: 250px
+      background-color: #8affff
+      color: #00947b
+      font-size: 16px
+      border: 2px solid #8affff
+      border-top-left-radius: 4px
+      border-bottom-left-radius: 4px
 
-  button
-    border: none
-    padding: 15px
-    background-color: #006148
-    color: #8affff
-    font-size: 16px
-    border: 2px solid #006148
-    border-top-right-radius: 4px
-    border-bottom-right-radius: 4px
-    &:hover
-      background-color: #00ae95
-      color: #bdffff
-      border-color: #24e1c8
-      cursor: pointer
+    button
+      border: none
+      padding: 15px
+      background-color: #006148
+      color: #8affff
+      font-size: 16px
+      border: 2px solid #006148
+      border-top-right-radius: 4px
+      border-bottom-right-radius: 4px
+      &:hover
+        background-color: #00ae95
+        color: #bdffff
+        border-color: #24e1c8
+        cursor: pointer
 
-#foot
+#footer-area
   position: relative
-  padding-bottom: 10px
-  top: 34%
-  -webkit-transform: translateY(-50%)
-  -ms-transform: translateY(-50%)
-  transform: translateY(-50%)
+  padding: 15px
 
 @media (max-width:400px)
   body
@@ -93,9 +87,13 @@ form
       border-radius: 4px
 
   #logo-area
-    top: 5%
-    -webkit-transform: translateY(0%)
-    -ms-transform: translateY(0%)
-    transform: translateY(0%)
     img
       width: 150px
+
+@media (max-height:650px)
+  header
+    padding-top: 50px
+
+@media (max-height: 550px)
+  header
+    padding-top: 0px
