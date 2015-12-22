@@ -4,6 +4,7 @@ html
     title Eldritch
     include ./_meta.jade
     link(rel='stylesheet', href='main.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
   body
     header
       div(id='logo-area')
@@ -18,5 +19,19 @@ html
 
       div(id='footer-area')
         h3 Music doesn't have to be a dark art
+        i(class="fa fa-angle-double-down")
+
+    div(id='about')
+      h2 What?
+      p Eldritch is simply a place for people who want to teach guitar and people who want to learn guitar to find each other.
+      p Eldritch will start small, in the form of instructor profiles and a directory, but it'll grow bigger and stronger over time, like some ever-expanding monster from beyond the stars.
+      p Eldritch is still being conjured up from the ether, but keep an eye turned to the cosmos for hints of its imminent arrival.
+      div(id='social')
+        a(href='https://twitter.com/eldritchio' target='_blank')
+          i(class="fa fa-twitter")
+        a(href='https://medium.com/@eldritchio' target='_blank')
+          i(class="fa fa-medium")
+        a(href='mailto:devon@eldritch.io')
+          i(class="fa fa-envelope")
 
     include ./_ga.jade

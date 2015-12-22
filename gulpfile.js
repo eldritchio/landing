@@ -19,4 +19,4 @@ gulp.task('watch', function() {
   gulp.watch('src/jade/**/*.jade', ['jade']);
 });
 
-gulp.task('default', ['sass', 'jade']);
+gulp.task('default', ['watch', 'sass', 'jade']);

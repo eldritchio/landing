@@ -1,3 +1,3 @@
 db: postgres -D /usr/local/var/postgres
-gulp: gulp watch
+gulp: gulp
 web: node index.js

@@ -1,4 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Droid+Sans:400,700)
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,700|Droid+Sans:400,700)
+
+$base-color: #17d4bb
+$dark-color: #007b62
+$light-color: #bdffff
 
 *
   margin: 0
@@ -20,14 +24,15 @@ body
 header
   width: 100%
   height: 100%
+  min-height: 475px
   padding-top: 10%
   text-align: center
-  background-color: #17D4BB
-  color: #bdffff
+  background-color: $base-color
+  color: $light-color
 
 h1
-  font-family: 'Droid Serif', serif
-  font-size: 3em
+  font-family: 'Cabin', sans-serif
+  font-size: 4em
   line-height: 1.5em
 
 h2, h3
@@ -58,21 +63,54 @@ h2, h3
     button
       border: none
       padding: 15px
-      background-color: #006148
-      color: #8affff
+      background-color: $dark-color
+      color: $light-color
       font-size: 16px
-      border: 2px solid #006148
+      border: 2px solid $dark-color
       border-top-right-radius: 4px
       border-bottom-right-radius: 4px
       &:hover
         background-color: #00ae95
-        color: #bdffff
+        color: $light-color
         border-color: #24e1c8
         cursor: pointer
 
 #footer-area
   position: relative
   padding: 15px
+
+  i
+    padding: 10px
+    font-size: 2em
+
+#about
+  height: 100%
+  max-width: 900px
+  margin: 0 auto
+  padding: 100px 25px 0 25px
+  color: #555
+
+  h2
+    font-size: 2em
+    line-height: 3em
+    color: $dark-color
+
+  p
+    font-size: 1.5em
+    line-height: 1.5em
+    padding-bottom: 30px
+
+  #social
+    position: relative
+    font-size: 2.5em
+    padding-bottom: 50px
+
+    a
+      padding-right: 20px
+      color: $dark-color
+
+      &:hover
+        color: $base-color
 
 @media (max-width:400px)
   body
@@ -94,6 +132,22 @@ h2, h3
   header
     padding-top: 50px
 
-@media (max-height: 550px)
+  #about
+    padding-top: 50px
+
+@media (max-height:575px)
   header
     padding-top: 0px
+
+  #logo-area
+    img
+      width: 125px
+
+  #about
+    padding-top: 5px
+
+@media (max-height:500px)
+   #footer-area
+    i
+      display: none
+
