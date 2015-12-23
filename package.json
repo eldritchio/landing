@@ -20,6 +20,7 @@
   "devDependencies": {
     "foreman": "^1.4.1",
     "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.0.4",
     "mocha": "^2.2.5",

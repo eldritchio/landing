@@ -19,12 +19,12 @@ html
 
       div(id='footer-area')
         h3 Music doesn't have to be a dark art
-        i(class="fa fa-angle-double-down")
+        i(id='scroll-button' class="fa fa-angle-double-down")
 
     div(id='about')
       h2 What?
       p Eldritch is simply a place for people who want to teach guitar and people who want to learn guitar to find each other.
-      p Eldritch will start small, in the form of instructor profiles and a directory, but it'll grow bigger and stronger over time, like some ever-expanding monster from beyond the stars.
+      p Eldritch will start small, in the form of instructor profiles and a directory, but it'll grow bigger and stronger over time.
       p Eldritch is still being conjured up from the ether, but keep an eye turned to the cosmos for hints of its imminent arrival.
       div(id='social')
         a(href='https://twitter.com/eldritchio' target='_blank')
@@ -35,3 +35,5 @@ html
           i(class="fa fa-envelope")
 
     include ./_ga.jade
+    script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+    script(src="scroll.js")
