@@ -1,4 +1,6 @@
 # Eldritch Landing Page
+[![Dependencies](https://img.shields.io/david/eldritchio/landing.svg?style=flat-square)](https://david-dm.org/eldritchio/landing)
+
 [Eldritch's landing page](http://eldritch.io), a simple node.js app.
 
 ## Setup and Running
